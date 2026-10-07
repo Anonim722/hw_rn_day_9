@@ -28,6 +28,7 @@
 
 ```bash
 npm install
+npx expo run:android
 npx expo start
 ```
 
