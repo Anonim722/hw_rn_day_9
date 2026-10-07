@@ -16,10 +16,26 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anonymous.hw_rn_day_9"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Застосунок потребує доступу до фотографій для вибору аватара.",
+          "cameraPermission": "Застосунок потребує доступу до камери для зйомки аватара."
+        }
+      ]
+    ],
+    "scheme": "day9cameramedia"
   }
 }
